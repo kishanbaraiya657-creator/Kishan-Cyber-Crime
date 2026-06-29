@@ -1,0 +1,37 @@
+class StudentProfile:
+    def __init__(self, name, enrollment_no, college, branch, branch_code, gender, email, contact):
+        self.name = name
+        self.enrollment_no = enrollment_no
+        self.college = college
+        self.branch = branch
+        self.branch_code = branch_code
+        self.gender = gender
+        self.email = email
+        self.contact = contact
+
+    def display_profile(self):
+        print("--- Student Profile ---")
+        print(f"Name           : {self.name}")
+        print(f"Enrollment No  : {self.enrollment_no}")
+        print(f"College        : {self.college}")
+        print(f"Branch         : {self.branch}")
+        print(f"Code           : {self.branch_code}")
+        print(f"Gender         : {self.gender}")
+        print(f"Email          : {self.email}")
+        print(f"Contact        : {self.contact}")
+
+# Initializing the student object with your details
+student = StudentProfile(
+    name="BARAIYA KISHANBHAI BHALABHAI",
+    enrollment_no="249720307002",
+    college="Government Polytechnic Kheda ( RASKA )",
+    branch="COMPUTER ENGINEERING",
+    branch_code="07",  # Assuming 07 based on common diploma structures
+    gender="Male",
+    email="kishanbaraiya657@gmail.com",
+    contact="9687442495"
+)
+
+# Printing the profile
+student.display_profile()
+
